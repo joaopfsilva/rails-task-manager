@@ -1,9 +1,12 @@
 <%= form_for(@task) do |f| %>
-  <%= f.label :msg %>
-  <%= f.text_field :msg %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
 
-  <%= f.label :creator %>
-  <%= f.text_field :creator %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
 
+  <%= f.label :completed %>
+  <%= f.check_box :completed %>
+  
   <%= f.submit %>
 <% end %>

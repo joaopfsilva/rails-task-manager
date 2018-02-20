@@ -1,3 +1,5 @@
-<h1><%= @task.creator %> - <%= @task.msg %></h1>
+<h1><%= @task.title %> - <%= @task.details %></h1>
+<%= check_box_tag 'completed', 'accepted', @task.completed, disabled: true %>
+
 
 <%= link_to "return index", tasks_path %>
